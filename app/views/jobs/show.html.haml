@@ -1,10 +1,28 @@
-%h1= @job.title
-%p= @job.description
-%p= @job.company
-%p= @job.date_applied
+#jobs
+	.job
+		/ %strong Job Application Status: 
+		/ %span.h3= @job.status_id
+		/ %br/
+		/ %br/
+		%strong Job Title: 
+		%span.h3= @job.title
+		%br/
+		%br/
+		%strong Job Description: 
+		%span.h4= @job.description
+		%br/
+		%br/
+		%strong Company Name: 
+		%span.h4= @job.company
+		%br/
+		%br/
+		%strong Status Date: 
+		%span.h4= @job.date_applied
+		%br/
+		%br/
+		%button.btn.btn-default= link_to "Job Posting Link", @job.url
 
-= link_to 'Home', root_path
-= link_to 'Edit', edit_job_path(@job)
-= link_to 'Delete', job_path(@job), method: :delete, data: {confirm: "Are you sure?"} 
-
-
+#links
+	= link_to "Back", root_path, class: "btn btn-sm btn-default"
+	= link_to "Edit", edit_job_path(@job), class: "btn btn-sm btn-default"
+	= link_to "Delete", job_path(@job), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-sm btn-default"

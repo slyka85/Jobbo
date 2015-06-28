@@ -1,9 +1,14 @@
-= simple_form_for(@job, html: {class: 'form-horizontal'}) do |f|
-	= f.collection_select :status_id, Status.all, :id, :name, {prompt: "Choose a status"}
-	= f.input :title, label: "Job Title"
-	= f.input :description, label: "Job Description"
-	= f.input :company, label: "Your Company"
-	= f.input :url, label: "Link to Job"
-	= f.input :date_applied, label: "Date Applied"
-	%br/
-	= f.button :submit
+#jobs
+	.job.text-center
+		= simple_form_for(@job, html: {class: 'form-horizontal'}) do |f|
+			= f.collection_select :status_id, Status.all, :id, :name, {prompt: "Choose a status"}
+			= f.input :title, label: "Job Title"
+			= f.input :description, label: "Job Description"
+			= f.input :company, label: "Company Name"
+			= f.input :url, label: "Link to Job"
+			%p Status Change Date
+			= f.date_select :date_applied, prompt: { day: 'Select day', month: 'Select month', year: 'Select year' }
+			%br/
+			#links
+				= f.button :submit
+				= link_to "Back", root_path, class: "btn btn-sm btn-default"
