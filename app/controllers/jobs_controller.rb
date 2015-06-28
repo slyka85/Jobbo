@@ -2,7 +2,7 @@ class JobsController < ApplicationController
 	before_action :find_job, only: [:show, :edit, :update, :destroy]
 	def index
 		if params[:status].blank?
-			@jobs = Job.all.order('created_at DESC')
+			@jobs = Job.all.order('date_applied DESC')
 		else
 			@status_id = Status.find_by(name: params[:status]).id
 			@jobs = Job.where(status_id: @status_id).order("created_at DESC")
