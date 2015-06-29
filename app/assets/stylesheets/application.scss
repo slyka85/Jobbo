@@ -51,7 +51,7 @@ font-family: 'Josefin Slab', sans-serif;
 .navbar-default {
 	text-transform: uppercase;
 	background-color: black;
-	color: white;
+/*	color: white;*/
 	border-radius: 0;
 	height: 180px;
 	padding: 15px 0;
@@ -99,3 +99,18 @@ font-family: 'Josefin Slab', sans-serif;
 #links {
 	margin-top: 2em;
 }
+
+.nav.navbar-nav > li > a:hover, .nav.navbar-nav > li > a:focus {
+color: #000;  /*Sets the text hover color on navbar*/
+}
+
+ .nav.navbar-nav > li > a:hover,
+ .nav.navbar-nav > li > a:focus,
+  .nav.navbar-nav > li > a:active {
+    text-decoration: none;
+    background-color: lightgrey; /*Change rollover cell color here*/
+  }
+
+   .nav {
+   	background-color: #2D204A;
+   }
