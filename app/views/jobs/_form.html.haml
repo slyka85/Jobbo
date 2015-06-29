@@ -1,14 +1,36 @@
 #jobs
 	.job.text-center
 		= simple_form_for(@job, html: {class: 'form-horizontal'}) do |f|
+			%br/
+			= f.label "Application Status:"
+			%br/
 			= f.collection_select :status_id, Status.all, :id, :name, {prompt: "Choose a status"}
-			= f.input :title, label: "Job Title"
-			= f.input :description, label: "Job Description"
-			= f.input :company, label: "Company Name"
-			= f.input :url, label: "Link to Job"
+			%br/
+			%br/
+			= f.label "Job Title:"
+			= f.text_area :title, :size => "75x1", :placeholder => "Type in the Job title and use it in the email subject when sending to the employer."
+			%br/
+			%br/
+			= f.label "Company Name:"
+			= f.text_area :company, :size => "75x1", :placeholder => "Type in the Company Name to research it before the interview."
+			%br/
+			%br/
+			= f.label "Link to Job Posting:"
+			= f.text_area :url, :size => "75x1", :placeholder => "Add the link to the job posting to mention it in your cover letter."
+			%br/
+			%br/
+			= f.label "Job Description:"
+			= f.text_area :description, :size => "75x10", :placeholder => "Save the job description in case job posting expires, you will still have the details of the job."
+			%br/
+			%br/
+			= f.label "My Cover Letter for this job:"
+			= f.text_area :coverletter, :size => "75x10", :placeholder => "Save your cover letter here. Type the Name of the person you contacted together with their contact information."
+			%br/
+			%br/
 			%p Status Change Date
 			= f.date_select :date_applied, prompt: { day: 'Select day', month: 'Select month', year: 'Select year' }
 			%br/
 			#links
 				= f.button :submit
 				= link_to "Back", root_path, class: "btn btn-sm btn-default"
+				%br/

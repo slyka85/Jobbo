@@ -8,19 +8,29 @@
 		%span.h3= @job.title
 		%br/
 		%br/
-		%strong Job Description: 
-		%span.h4= @job.description
-		%br/
-		%br/
 		%strong Company Name: 
 		%span.h4= @job.company
 		%br/
 		%br/
-		%strong Status Date: 
+		%strong Application Status: 
+		%span.h4= @job.status.name
+		%br/
+		%br/
+		%strong Status Updated on: 
 		%span.h4= @job.date_applied
 		%br/
 		%br/
+		%strong Job Description: 
+		%h4=simple_format(h(@job.description), class: "textArea") 
+		%br/
+		%br/
+		%strong My Cover Letter: 
+		%h4=simple_format(h(@job.coverletter), class: "textArea")
+		%br/
+		%br/
 		%button.btn.btn-default= link_to "Job Posting Link", @job.url
+		%br/
+		%br/
 
 #links
 	= link_to "Back", root_path, class: "btn btn-sm btn-default"
