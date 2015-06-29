@@ -14,8 +14,8 @@
 			%ul.nav.navbar-nav
 				%li= link_to 'All Jobs', root_path
 				- Status.all.each do |status|
-					%li= link_to status.name, jobs_path(status: status.name)
-			= link_to 'Add New Job', new_job_path, class: "navbar-text navbar-right navbar-link btn btn-default"
+					%li#joblink= link_to status.name, jobs_path(status: status.name)
+			= link_to 'Add New Job', new_job_path, class: "navbar-text navbar-right navbar-link btn btn-default corner"
 	.container
 		.col-md-6.col-md-offset-3
 			= yield

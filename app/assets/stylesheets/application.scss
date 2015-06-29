@@ -13,9 +13,9 @@
  *= require_tree .
  *= require_self
  */
-
-@import 'bootstrap-sprockets';
 @import 'bootstrap';
+@import 'bootstrap-sprockets';
+
 
 * {
 	box-sizing: border-box;
@@ -68,7 +68,7 @@ font-family: 'Josefin Slab', sans-serif;
 
 #jobs {
 	.job {
-		padding: 1em 0;
+		padding: 0;
 		border-bottom: 1px solid rgba(250,250,250, 0.5);
 		h1, h2, h3 {
 			font-size: 2.5em;
@@ -101,6 +101,7 @@ font-family: 'Josefin Slab', sans-serif;
 }
 
 .nav.navbar-nav > li > a:hover, .nav.navbar-nav > li > a:focus {
+	width: 100%;
 color: #000;  /*Sets the text hover color on navbar*/
 }
 
@@ -114,3 +115,19 @@ color: #000;  /*Sets the text hover color on navbar*/
    .nav {
    	background-color: #2D204A;
    }
+.nav.navbar-nav > li > a {
+	color: #E1BEE7;
+}
+/*#joblink a:focus {
+	background-color: white !important;
+
+}*/
+.corner {
+		background-color: black;
+	  position: absolute;
+    top: 57px;
+    right: 150px;
+}
+.container {
+	margin-bottom: 100px;
+}
