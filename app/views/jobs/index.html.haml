@@ -2,9 +2,10 @@
 	- @jobs.each do |job|
 		.job
 			%h2= link_to job.title, job
-			%h4= job.company
+			%h4.companyName= job.company
 			%strong Status: 
-			%span.h6= job.status.name
+			%span.h6.status= job.status.name
 			%br/
 			%strong Status updated on: 
 			%span.h6= job.date_applied
+			%hr.style-one

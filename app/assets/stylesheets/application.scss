@@ -54,7 +54,8 @@ font-family: 'Josefin Slab', sans-serif;
 /*	color: white;*/
 	border-radius: 0;
 	height: 180px;
-	padding: 15px 0;
+	padding-top: 15px;
+	margin-bottom: 0px;
 	border: none;
 }
 
@@ -69,10 +70,11 @@ font-family: 'Josefin Slab', sans-serif;
 #jobs {
 	.job {
 		padding: 0;
-		border-bottom: 1px solid rgba(250,250,250, 0.5);
+/*		border-bottom: 1px solid rgba(250,250,250, 0.5);*/
 		h1, h2, h3 {
 			font-size: 2.5em;
 			font-weight: 300;
+			margin-top: 30px;
 			margin-bottom: 0;
 			color: white;
 
@@ -86,8 +88,8 @@ font-family: 'Josefin Slab', sans-serif;
 		span {
 			color: #D1C4E9;
 		}
-		.h4 {
-			color: #F48FB1;
+		.status{
+			color: #F06292;
 		}
 		.textArea {
 			border: 1px solid white;
@@ -133,9 +135,35 @@ color: #000;  /*Sets the text hover color on navbar*/
 .corner {
 		background-color: black;
 	  position: absolute;
-    top: 57px;
+    top: 67px;
     right: 150px;
 }
 .container {
 	margin-bottom: 100px;
+	margin-top: 10px;
+}
+.black {
+	background-color: black;
+	color: white;
+}
+.companyName {
+		text-transform: uppercase;
+}
+hr.style-five {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(10, 20, 30, 0), rgba(236,64,122,0.75), rgba(50, 40, 30, 0));
+}
+hr.style-one {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(10, 20, 30, 0), rgba(248,187,208 ,0.75), rgba(50, 40, 30, 0));
+}
+.my-custom-class {
+	-webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  appearance: none;
+  border-radius: 0px;
+  text-indent: 10px;
+  width:520px;
 }

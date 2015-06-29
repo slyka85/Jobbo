@@ -13,7 +13,7 @@
 		%br/
 		%br/
 		%strong Application Status: 
-		%span.h4= @job.status.name
+		%span.status= @job.status.name
 		%br/
 		%br/
 		%strong Status Updated on: 
@@ -28,11 +28,11 @@
 		%h4=simple_format(h(@job.coverletter), class: "textArea")
 		%br/
 		%br/
-		%button.btn.btn-default= link_to "Job Posting Link", @job.url
+		%button.btn.btn-default.black= link_to "Open Job Posting", @job.url, :target => "_blank"
 		%br/
 		%br/
 
 #links
-	= link_to "Back", root_path, class: "btn btn-sm btn-default"
-	= link_to "Edit", edit_job_path(@job), class: "btn btn-sm btn-default"
-	= link_to "Delete", job_path(@job), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-sm btn-default"
+	= link_to "Back", root_path, class: "btn btn-sm btn-default black"
+	= link_to "Edit", edit_job_path(@job), class: "btn btn-sm btn-default black"
+	= link_to "Delete", job_path(@job), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-sm btn-default black"

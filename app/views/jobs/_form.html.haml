@@ -4,7 +4,7 @@
 			%br/
 			= f.label "Application Status:"
 			%br/
-			= f.collection_select :status_id, Status.all, :id, :name, {prompt: "Choose a status"}
+			= f.collection_select :status_id, Status.all, :id, :name, {prompt: "Choose a status"}, class: "my-custom-class"
 			%br/
 			%br/
 			= f.label "Job Title:"
@@ -31,6 +31,6 @@
 			= f.date_select :date_applied, prompt: { day: 'Select day', month: 'Select month', year: 'Select year' }
 			%br/
 			#links
-				= f.button :submit
-				= link_to "Back", root_path, class: "btn btn-sm btn-default"
+				= f.button :submit, class: "btn btn-sm btn-default black"
+				= link_to "Back", root_path, class: "btn btn-sm btn-default black"
 				%br/
