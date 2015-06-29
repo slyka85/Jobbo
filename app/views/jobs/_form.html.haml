@@ -27,6 +27,10 @@
 			= f.text_area :coverletter, :size => "75x10", :placeholder => "Save your cover letter here. Type the Name of the person you contacted together with their contact information."
 			%br/
 			%br/
+			= f.label "My Notes:"
+			= f.text_area :notes, :size => "75x6", :placeholder => "EXAMPLE: \n • 1/22/15 need to send a 'thank you' letter to John Smith at john@smith.com \n • 2/3/15 Spoke to Maria from HR, interview scheduled for 2/7/15 \n • 2/15/15 need to update Education section in my resume \n • 2/16/15 salary negotiation "
+			%br/
+			%br/
 			%p Status Change Date
 			= f.date_select :date_applied, prompt: { day: 'Select day', month: 'Select month', year: 'Select year' }
 			%br/
