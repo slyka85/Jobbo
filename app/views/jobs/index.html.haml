@@ -1,6 +1,6 @@
 #jobs
-	- @jobs.each do |job|
-		.job
+	.job
+		- @jobs.each do |job|
 			%h2= link_to job.title, job
 			%h4.companyName= job.company
 			%strong Status: 

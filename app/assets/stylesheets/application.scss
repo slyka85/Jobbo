@@ -109,9 +109,12 @@ font-family: 'Josefin Slab', sans-serif;
 #links {
 	margin-top: 2em;
 }
-
+.nav.navbar-nav {
+	height: 50px;
+}
 .nav.navbar-nav > li > a:hover, .nav.navbar-nav > li > a:focus {
-	width: 100%;
+width: 100%;
+height: 50px;
 color: #000;  /*Sets the text hover color on navbar*/
 }
 
@@ -134,7 +137,7 @@ color: #000;  /*Sets the text hover color on navbar*/
 }*/
 .corner {
 		background-color: black;
-	  position: absolute;
+	  position: relative;
     top: 67px;
     right: 150px;
 }
@@ -166,4 +169,23 @@ hr.style-one {
   border-radius: 0px;
   text-indent: 10px;
   width:520px;
+}
+.split-para { float: left;}
+.split-span { display:block;float:right;width:50%;margin-left:10px;}
+
+.statsImage {
+	content: "hi";
+	color: white;
+	background: url('http://irc.phrenzy.org/img/site/icon-statistics.png')
+}
+
+.home {
+	background: lightgrey;
+    height: 50px;
+        vertical-align: middle;
+}
+
+a.homeLogo {
+    padding-top: 10px !important;
+
 }

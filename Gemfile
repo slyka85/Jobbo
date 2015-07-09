@@ -18,3 +18,4 @@ group :development, :test do
 	gem 'bootstrap-sass', '~> 3.3.5.1'
 end
 
+gem 'devise'

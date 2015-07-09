@@ -1,0 +1,24 @@
+#jobs
+	.job
+		= link_to image_tag('http://irc.phrenzy.org/img/site/icon-statistics.png')
+		%ul
+			%strong.split-para Not Started: 
+			%span.split-span= Job.where(status_id: 1).count
+			%br/
+			%strong.split-para In Progress: 
+			%span.split-span= Job.where(status_id: 2).count
+			%br/
+			%strong.split-para Submitted: 
+			%span.split-span= Job.where(status_id: 3).count
+			%br/
+			%strong.split-para Interview Scheduled: 
+			%span.split-span= Job.where(status_id: 4).count
+			%br/
+			%strong.split-para Accepted: 
+			%span.split-span= Job.where(status_id: 5).count
+			%br/
+			%strong.split-para Rejected: 
+			%span.split-span= Job.where(status_id: 6).count
+			%br/
+			%strong.split-para Complete: 
+			%span.split-span= Job.where(status_id: 7).count
