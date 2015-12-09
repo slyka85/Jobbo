@@ -21,15 +21,15 @@
 		%br/
 		%br/
 		%strong Job Description: 
-		%h4=simple_format(h(@job.description), class: "textArea") 
+		%h4=simple_format(h(@job.description), class: "textArea", id:"textArea-job-desc") 
 		%br/
 		%br/
 		%strong My Cover Letter: 
-		%h4=simple_format(h(@job.coverletter), class: "textArea")
+		%h4=simple_format(h(@job.coverletter), class: "textArea", id:"textArea-cover-let")
 		%br/
 		%br/
 		%strong My Notes: 
-		%h4=simple_format(h(@job.notes), class: "textArea")
+		%h4=simple_format(h(@job.notes), class: "textArea", id:"textArea-notes")
 		%br/
 		%br/
 		%button.btn.btn-default.black= link_to "Open Job Posting", @job.url, :target => "_blank"

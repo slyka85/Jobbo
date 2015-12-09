@@ -1,0 +1,24 @@
+
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-brand"><a href="/stats"><img src="https://cdn0.iconfinder.com/data/icons/diagram-set/505/diagram_37-512.png" alt=""></a></div>
+    <ul class="nav navbar-nav">
+      <li>
+        <%= link_to "All Jobs", root_path %>
+      </li>
+        <% Status.all.each do |status| %>
+          <li id="joblink">
+            <%= link_to status.name, jobs_path(status: status.name) %>
+          </li>
+        <% end %>
+    </ul>
+
+    <% if user_signed_in? %>
+        <%= link_to 'Log Out', destroy_user_session_path, :method => :delete, class: "navbar-text navbar-right navbar-link"  %>
+    <%= link_to "+ Job", new_job_path, class: "navbar-text navbar-right navbar-link new-job-link" %>
+    <% else %>
+   <%= link_to "Log In", new_user_session_path, class: "navbar-text navbar-right navbar-link" %>
+   <%= link_to "Sign Up", new_user_registration_path, class: "navbar-text navbar-right navbar-link" %>
+   <% end %>
+  </div>
+</nav>

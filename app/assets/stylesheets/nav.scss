@@ -1,0 +1,99 @@
+
+/* COLORS: 
+
+grey: #515151
+blue: #24AAAE
+yellow: #F8CF24
+red: #EA5828;
+
+*/
+
+a.navbar-link.new-job-link {
+    color: white;
+}
+
+
+
+ul.navbar-nav {
+    position: absolute;
+    left: 200px;
+}
+
+/*
+ROTATE LOGO */
+
+
+
+@-webkit-keyframes spinnow {
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes spinnow {
+    100% {
+        transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+    }
+}
+@-ms-keyframes spinnow {
+    100% {
+        transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+    }
+}
+
+.navbar-brand img {
+    width: 75px;
+    height: 66px;
+    position: absolute;
+    top: 19px;
+    left: 59px;
+    animation: 10s spinnow infinite linear;
+    -moz-animation: 5s spinnow infinite linear;
+    -webkit-animation: 6s spinnow infinite cubic-bezier(0.98, 0.28, 0.18, 0.62);
+    -ms-animation: 5s spinnow infinite linear;
+}
+
+
+
+
+
+ul.nav.navbar-nav li {
+/*    border: 1px solid black;
+    border-radius: 1px;*/
+    padding: 1px;
+}
+
+ul.nav.navbar-nav li:first-child a {
+background-color: #515151;
+color: white;
+}
+
+
+
+ul.nav.navbar-nav li:nth-child(2) a {
+background-color: #F8CF24;
+color: black;
+}
+
+ul.nav.navbar-nav li:nth-child(3) a {
+background-color: #EC407A;
+color: white;
+}
+
+ul.nav.navbar-nav li:nth-child(4) a {
+background-color: #24AAAE;
+color: white;
+}
+
+ul.nav.navbar-nav li:nth-child(5) a {
+background-color: #2ecc71;
+color: white;
+}
+
+ul.nav.navbar-nav li:nth-child(6) a {
+background-color: #EA5828;
+color: white;
+}
+

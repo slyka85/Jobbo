@@ -1,0 +1,47 @@
+footer {
+background-color: rgba(0, 0, 0, 0);
+    padding: 25px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+footer span.copyright {
+    text-transform: uppercase;
+    text-transform: none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 40px;
+}
+
+footer ul.quicklinks {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-transform: none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 40px;
+}
+
+ul.social-buttons {
+    margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+    display: block;
+    border-radius: 100%;
+    font-size: 30px;
+    line-height: 40px;
+    outline: 0;
+    color: grey;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+    color: rgba(142, 238, 190, 0.9);
+}
+
+.copyright {
+    color: grey;
+}

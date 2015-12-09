@@ -1,5 +1,5 @@
 class JobsController < ApplicationController
-	before_action :find_job, only: [:show, :edit, :update, :destroy]
+	before_action :find_job, only: [:show, :edit, :update, :destroy, :stats]
 	before_action :authenticate_user!
 	def index
 		if params[:status].blank?
@@ -12,6 +12,7 @@ class JobsController < ApplicationController
 
 	def show
 	end
+
 
 	def new
 		@job = current_user.jobs.build
@@ -50,5 +51,8 @@ class JobsController < ApplicationController
 		def find_job
 			@job = Job.find(params[:id])
 		end
+
+			def stats
+	end
 
 end

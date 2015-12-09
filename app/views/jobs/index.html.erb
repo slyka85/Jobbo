@@ -1,0 +1,26 @@
+<div id="jobs">
+  <div class="job">
+  <% if @jobs == [] %>
+  <h2>No Jobs Tracked</h2>
+  <% else %>
+    <% @jobs.each do |job| %>
+      <h2>
+        <%= link_to job.title, job %>
+      </h2>
+      <h4 class="companyName">
+        <%= job.company %>
+      </h4>
+      <strong>Status: </strong>
+      <span class="h6 status">
+        <%= job.status.name %>
+      </span>
+      <br/>
+      <strong>Status updated on: </strong>
+      <span class="h6">
+        <%= job.date_applied %>
+      </span>
+      <hr class="style-one"/>
+    <% end %>
+    <% end %>
+  </div>
+</div>

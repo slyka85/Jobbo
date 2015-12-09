@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  devise_for :users
+ devise_for :users, controllers: {registrations: "registrations"}
  resources :jobs
- root 'stats#index'
+ root 'jobs#index'
+ resources :stats
 end
