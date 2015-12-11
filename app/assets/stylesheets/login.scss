@@ -76,6 +76,11 @@ html, body {
   animation: dash 3s .8s linear forwards;
 }
 
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #0A0B0B inset;
+  	-webkit-text-fill-color: #26d69a !important;
+}
+
 input {
   position: absolute;
   width: 195px;
@@ -85,6 +90,11 @@ input {
   border: none;
 }
 
+input#user_email,
+input#user_password,
+ {
+	  color: #A7D6C6;
+}
 input:focus,
 #login-button:focus {
   outline: none;
