@@ -13,13 +13,9 @@ html, body {
   min-height: 300px;
   margin: 30px auto;
   background-color: rgba(10,10,10,.68);
+
 }
 
-.login-icon-field {
-  height: 50px;
-  width: 100%;
-  /*background-color: red;*/
-}
 
 .login-icon {
   margin: 50px 65px;
@@ -78,7 +74,7 @@ html, body {
 
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px #0A0B0B inset;
-  	-webkit-text-fill-color: #26d69a !important;
+  	-webkit-text-fill-color: #C8B7D5 !important;
 }
 
 input {
@@ -93,7 +89,7 @@ input {
 input#user_email,
 input#user_password,
  {
-	  color: #A7D6C6;
+	  color: #C8B7D5;
 }
 input:focus,
 #login-button:focus {
@@ -122,7 +118,9 @@ input::-moz-placeholder {
   padding: 0;
   margin: 10px 20px 10px;
   font-weight: 700;
-  background-color: #22c08a;
+/*  background-color: #22c08a;*/
+  background-color: #6B29B9;
+  color: white;
   border: none;
   border-radius: 5px;
   transition: background-color .10s ease-in-out;
