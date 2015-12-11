@@ -27,7 +27,7 @@
         <%= link_to "All Jobs", root_path %>
       </li>
         <% Status.all.each do |status| %>
-          <li id="joblink">
+          <li class="joblink">
             <%= link_to status.name, jobs_path(status: status.name) %>
           </li>
         <% end %>
