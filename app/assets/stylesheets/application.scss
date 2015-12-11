@@ -48,7 +48,7 @@ background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 7%, rgba(
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#512da8', GradientType=0 );
   background-repeat: no-repeat;
   background-attachment: fixed;*/
-font-family: 'Josefin Slab', sans-serif;
+font-family: 'Comfortaa', sans-serif;
 }
 
 .clearfix:before,
@@ -92,6 +92,7 @@ font-family: 'Josefin Slab', sans-serif;
 			margin-bottom: 0;
 			color: rgba(142, 238, 190, 0.9);
 
+
 			a {
 				color: #9DBDB6;
 			}
@@ -122,6 +123,7 @@ font-family: 'Josefin Slab', sans-serif;
 		h1 {
 			    color: rgb(157, 187, 189);
 		}
+
 		span {
 			color: #24AAAE;
 		}
@@ -249,4 +251,5 @@ a.homeLogo {
 
 h2 {
 	color: white;
+	text-align: center;
 }

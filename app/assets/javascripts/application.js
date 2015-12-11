@@ -14,5 +14,7 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require waterFloat
+//= require velocity.min.js
+//= require velocity.ui.min.js
 //= require_tree .
 
