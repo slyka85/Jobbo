@@ -10,7 +10,10 @@ function slideLeftIn() {
 }
 
 function shake() {
-  $(".password-row").velocity("callout.shake");
+		$(".sign-in-box").velocity("transition.expandOut");
+	// $(".username-row").velocity("transition.expandOut");
+  // $(".password-row").velocity("transition.expandOut");
+  // $("#login-button").velocity("transition.expandOut");
 }
 
 slideUpIn();
